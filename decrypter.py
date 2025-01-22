@@ -1,12 +1,12 @@
 import os
 import pyaes
 
-file_name = "test.txt.ransowaretroll"
+file_name = "teste.txt.ransowaretroll"
 file = open(file_name, "rb")
 file_data = file.read()
 file.close()
 
-key = b"testeransowares"
+key = b"testeransomwares"
 aes = pyaes.AESModeOfOperationCTR(key)
 decrypt_data = aes.decrypt(file_data)
 
